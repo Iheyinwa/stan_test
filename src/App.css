@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+/*NAVIGATION COMPONENT*/
+.navbar{
+  position: fixed;
+  width: 100%;
+  height: 72px;
+  left: 0px;
+  top: 0px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav ul{
+  position: absolute;
+  height: 54px;
+  left: 10.87%;
+  right: 10.73%;
+  top: 5px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-evenly;
+  margin: 0px 14px;
+  position: absolute;
+  width: 331px;
+  height: 24px;
+  left: 0px;
+  top: calc(50% - 54px/2);
+}
+.nav h3{
+  color: #0052CC;
+}
+.nav p{
+  color: #091E42;
+}
+.button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  width: 145px;
+  height: 25px;
+  left: 941px;
+  font-size: 14px;
+}
+.logout{
+  background: transparent;
+  padding: 10px;
+  color: #A5ADBA;
+  border: 1px solid transparent;
+
+}
+.login{
+  background: #0052CC;
+  border-radius: 4px;
+  padding: 10px;
   color: white;
+  border: 1px solid #0052CC;
 }
-
-.App-link {
-  color: #61dafb;
+/*FOOTER COMPONENT*/
+footer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #091E42;
+  color:white;
+  position: absolute;
+  width: 100%;
+  height: 224px;
 }
+.socials{
+  text-align: right;
+  font-size: 14px;
+  line-height: 20px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.icons{
+  padding:0;
+  list-style: none;
+  display:flex;
+  flex-direction: row;
+  margin-left: 72%;
 }
