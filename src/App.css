@@ -1,17 +1,21 @@
 /*NAVIGATION COMPONENT*/
 .navbar{
+  margin: 0S;
   position: fixed;
   width: 100%;
   height: 72px;
   left: 0px;
   top: 0px;
+  background-color: #FFFFFF;
+  order: 1;
 }
-nav ul{
+nav ul,.content{
+  width: 75%;
+  margin-left:8%;
+  margin-right:20%;
   position: absolute;
-  height: 54px;
-  left: 10.87%;
-  right: 10.73%;
   top: 5px;
+  height: 72px;
 }
 .nav{
   display: flex;
@@ -24,6 +28,7 @@ nav ul{
   height: 24px;
   left: 0px;
   top: calc(50% - 54px/2);
+  bottom: 30px;
 }
 .nav h3{
   color: #0052CC;
@@ -39,7 +44,7 @@ nav ul{
   position: absolute;
   width: 145px;
   height: 25px;
-  left: 941px;
+  left: 900px;
   font-size: 14px;
 }
 .logout{
@@ -47,7 +52,6 @@ nav ul{
   padding: 10px;
   color: #A5ADBA;
   border: 1px solid transparent;
-
 }
 .login{
   background: #0052CC;
@@ -56,28 +60,209 @@ nav ul{
   color: white;
   border: 1px solid #0052CC;
 }
-/*FOOTER COMPONENT*/
-footer{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  background: #091E42;
-  color:white;
-  position: absolute;
-  width: 100%;
-  height: 224px;
-}
-.socials{
-  text-align: right;
-  font-size: 14px;
-  line-height: 20px;
 
-}
-.icons{
-  padding:0;
-  list-style: none;
+/*LANDING PAGE*/
+
+/*SECTION ONE*/
+.one{
   display:flex;
-  flex-direction: row;
-  margin-left: 72%;
+  justify-content: space-between;
+  position:absolute;
+  left: 146px;
+  right: 10.73%;
+  top: 50px;
 }
+.one h3,.two h3{
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 120%;
+  margin-top: 5px;
+  color: #091E42;
+}
+.sect_one{
+  position: absolute;
+  top: 126px;
+  width: 340px;
+  height: 174px;
+}
+.sect_one p,.sect_two p{
+  font-size: 16px;
+  color: #344563;
+  font-style: normal;
+}
+aside{
+  margin-top: 5px;
+  margin-left: 45%;
+}
+aside img{
+  width:580px;
+}
+
+/*SECTION TWO*/
+.two{
+  /* background: #F4F5F7; */
+  width:100%;
+  position: relative;
+  top:450px;
+}
+.sect_two{
+  position: absolute;
+  top: 80px;
+  left: 146px;
+  width: 415px;
+}
+.sect_two p{
+  width: 436px;
+}
+.cards{
+  display:flex;
+  justify-content: space-between;
+  border-radius: 16px;
+  text-align: left;
+  font-size: 12px;
+  position: absolute;
+  top: 292px;
+  left: 146px;
+}
+.card_one,.card_two,.card_three{
+  border:1px solid black;
+  border-radius: 16px;
+  width:240px;
+  padding:18px;
+  margin-right: 32px;
+  box-shadow: 1px 1px 1px 0 #888888,
+  1px 1px 1px 0 #888888;
+}
+.two img{
+  position: absolute;
+  top:620px;
+}
+.two img, .three img, .four img{
+  position: absolute;
+  left:146px;
+  width:885px;
+  height:506px;
+}
+
+/*SECTION THREE*/
+.three{
+  width: 90%;
+  position: absolute;
+  top: 1600px;
+}
+.sect_three{
+  width:315px;
+  position: absolute;
+  left:146px;
+}
+.three_aside{
+  float: right;
+  display: flex;
+  width:500px;
+  justify-content: space-between;
+  /* padding: 20px; */
+}
+.three img{
+  position: absolute;
+  top: 250px;
+}
+
+/*SECTION FOUR*/
+.four {
+  width: 90%;
+  position: absolute;
+  top: 2400px;
+}
+.sect_four {
+  width: 315px;
+  position: absolute;
+  left: 146px;
+}
+.four_aside {
+  float: right;
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+  /* padding: 20px; */
+}
+.four img {
+  position: absolute;
+  top: 250px;
+}
+
+/*SECTION FIVE*/
+.five{
+  position: absolute;
+  left:146px;
+  margin-right:20%;
+  top: 3300px;
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*FOOTER COMPONENT*/
+footer {
+  position: relative;
+  top: 3600px;
+  width: 100%;
+  background: #091E42;
+  color: white;
+  height: 224px;
+  margin-top: 10px;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  position: absolute;
+  left: 30px;
+  width: 331px;
+  height: 24px;
+  top: calc(50% - 54px/2);
+}
+.logo h3 {
+  font-size: 25px;
+}
+.socials {
+  position: absolute;
+  left: 620px;
+  text-align: right;
+}
+.socials p {
+  margin-top: 83px;
+}
+.icons {
+  list-style: none;
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  left: 172px;
+}
+.icons li {
+  margin-bottom: 10px;
+  padding: 6px;
+  width: 24px;
+  height: 24px;
+}
+
+/* .card_one{
+  
+  /* position: absolute;
+  width:340px; */
+/* .card_two {
+  border: 1px solid black;
+  border-radius: 16px;
+    width:359px;
+  /* position: absolute;
+  left:574px;
+  width: 340px; */
+
+/* .card_three {
+  border: 1px solid black;
+  border-radius: 16px;
+    width:359px;*/
+  /* position: absolute;
+  left:250px;
+  width: 340px; */

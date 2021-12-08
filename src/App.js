@@ -1,8 +1,8 @@
 import './App.css';
-import { Footer } from './Components/Footer';
+import { Home } from './Pages/home';
 
 function App() {
-	return <Footer />;
+	return <Home />;
 }
 
 export default App;
