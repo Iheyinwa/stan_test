@@ -60,6 +60,9 @@ nav ul,.content{
   color: white;
   border: 1px solid #0052CC;
 }
+.login:hover,.logout:hover{
+  cursor: pointer;
+}
 
 /*LANDING PAGE*/
 

@@ -1,8 +1,6 @@
 import './App.css';
+import './Auth.css';
 import { Home } from './Pages/home';
-
-function App() {
+export default function App() {
 	return <Home />;
 }
-
-export default App;
