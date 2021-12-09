@@ -9,7 +9,7 @@ import tenece from '../img/tenece.png';
 import privateEstates from '../img/Private Estates.png';
 import genesys from '../img/Genesys.png';
 
-export function Home() {
+export function Home(props) {
 	return (
 		<div>
 			<Nav />
@@ -114,11 +114,11 @@ export function Home() {
 				<img
 					src={UNN}
 					alt="University Of Nigeria, to restore the dignity of man"
-					style={{ height: '63px', width: '267.75px' }}
+					style={{ height: '70px', width: '267.75px' }}
 				/>
-				<img src={tenece} alt="tenece logo" style={{ height: '70px', width: '142px' }} />
+				<img src={tenece} alt="tenece logo" style={{ height: '63px', width: '142px' }} />
 				<img src={privateEstates} alt="Private Estates Logo" style={{ height: '56.69px', width: '280px' }} />
-				<img src={genesys} alt="Genesys Logo" style={{ height: '42px', width: '183px' }} />
+				<img src={genesys} alt="Genesys Logo" style={{ height: '45px', width: '183px' }} />
 			</section>
 			<Footer />
 		</div>

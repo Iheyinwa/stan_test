@@ -1,16 +1,21 @@
+import blueLogo from '../img/blueLogo.png';
+import { Button } from './Button';
 export function Nav() {
+	const onClick = () => {
+		alert(1);
+	};
 	return (
 		<nav className="navbar">
 			<ul>
 				<li className="nav">
-					<h3>resource edge</h3>
+					<img src={blueLogo} alt="Company Blue Logo" />
 					<p>Features</p>
 					<p>About</p>
 				</li>
 
 				<li className="button">
-					<button className="logout">Sign up</button>
-					<button className="login">Sign in</button>
+					<Button className="logout" onClick={onClick} text="Sign Up" />
+					<Button className="login" text="Sign in" onClick={onClick} />
 				</li>
 			</ul>
 		</nav>
