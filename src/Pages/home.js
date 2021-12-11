@@ -8,11 +8,12 @@ import UNN from '../img/UNN.png';
 import tenece from '../img/tenece.png';
 import privateEstates from '../img/Private Estates.png';
 import genesys from '../img/Genesys.png';
+import { Asset, EManagement, PaidTimeOff, Payroll, PManagement, REVouchers, Travel } from '../svg/icon';
 
-export function Home(props) {
+export default function Home({ onClick }) {
 	return (
 		<div>
-			<Nav />
+			<Nav onClick={onClick} />
 			<section className="one">
 				<div className="sect_one">
 					<h3>
@@ -33,6 +34,7 @@ export function Home(props) {
 
 				<div className="cards">
 					<div className="card_one">
+						<EManagement />
 						<h4>Employee Management</h4>
 						<p>
 							From Hiring & Onboarding to Retiring, the Resource Edge Employee Management module
@@ -41,6 +43,7 @@ export function Home(props) {
 					</div>
 
 					<div className="card_two">
+						<PManagement />
 						<h4>Performance Management</h4>
 						<p>
 							Manage and track employee performance with our easy-to-use tools for goal setting,
@@ -49,6 +52,7 @@ export function Home(props) {
 					</div>
 
 					<div className="card_three">
+						<PaidTimeOff />
 						<h4>Paid time off</h4>
 						<p>
 							Employees can request for paid time off, vacations, sick leaves or educational leaves and
@@ -68,13 +72,15 @@ export function Home(props) {
 
 				<div className="three_aside">
 					<div>
+						<Travel />
 						<h4>Travel & Logistics</h4>
 						<p>Make travel requests, get approvals, and have access to travel information.</p>
 					</div>
 
 					<div>
-						<h4>Travel & Logistics</h4>
-						<p>Make travel requests, get approvals, and have access to travel information.</p>
+						<Asset />
+						<h4>Asset Management</h4>
+						<p>Manage the acquisition, assignment, and disposition of assets seamlessly.</p>
 					</div>
 				</div>
 
@@ -92,6 +98,7 @@ export function Home(props) {
 
 				<div className="four_aside">
 					<div>
+						<REVouchers />
 						<h4>RE Vouchers</h4>
 						<p>
 							Track and manage expenditure for multiple teams across your organisation using Resource Edge
@@ -100,6 +107,7 @@ export function Home(props) {
 					</div>
 
 					<div>
+						<Payroll />
 						<h4>Payroll</h4>
 						<p>
 							Our easy to use systems takes away the pain of managing complex payrolls for organisations

@@ -1,9 +1,7 @@
 import blueLogo from '../img/blueLogo.png';
 import { Button } from './Button';
+import { Link } from 'react-router-dom';
 export function Nav() {
-	const onClick = () => {
-		alert(1);
-	};
 	return (
 		<nav className="navbar">
 			<ul>
@@ -14,8 +12,10 @@ export function Nav() {
 				</li>
 
 				<li className="button">
-					<Button className="logout" onClick={onClick} text="Sign Up" />
-					<Button className="login" text="Sign in" onClick={onClick} />
+					<Button className="logout" text="Sign Up" />
+					<Link to="/auth">
+						<Button className="login" text="Sign in" />
+					</Link>
 				</li>
 			</ul>
 		</nav>
