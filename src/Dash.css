@@ -1,0 +1,153 @@
+.navDash img,.verticalLine{
+  position:absolute;
+  top: 10px;
+  margin-left: 60px;
+}
+.navDash p{
+  position: absolute;
+  top: 0px;
+  margin-left: 270px;
+  color: #091E42;
+  font-size: 12px;
+}
+.toggle{
+  position: absolute;
+  left: 50px;
+}
+.user{
+  border-radius: 50%;
+  position: absolute;
+  left: 92%;
+  width: 24px;
+  height: 24px;
+}
+.menu {
+  position: relative;
+  margin-top: 60px;
+  width: 300px;
+  height: 264px;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 5px rgba(9, 30, 66, 0.2),
+    0px 0px 1px rgba(9, 30, 66, 0.31);
+  border-radius: 3px;
+  z-index: 9;
+}
+.name {
+  color: #6B778C;
+  font-size: 12px;
+  position: absolute;
+  left: 25px;
+  top: 15px;
+}
+.menu h6 {
+  font-size: 12px;
+  position: absolute;
+  left: 25px;
+  top: 32px;
+  color: #172B4D;
+}
+.decision {
+  font-size: 10px;
+  position: absolute;
+  left: 25px;
+  top: 90px;
+  color: #6B778C;
+}
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  padding: 0;
+  left: 25px;
+  top: 100px;
+  color: #6B778C;
+}
+.menu li {
+  display:flex;
+  list-style: none;
+  font-size: 11px;
+  padding: 10px 0px;
+}
+.horizontalLine{
+  border-top: 1px solid #e5e5e5;
+  width:300px;
+  position: absolute;
+  top: 210px;
+}
+.signout{
+  position: absolute;
+  left:25px;
+  top: 210px;
+  color: #172B4D;
+  font-size: 13px;
+}
+.verticalLine{
+   border-left: 1px solid #C1C7D0;
+   margin-left: 250px;
+   height: 24px;
+}
+
+/*DASH BOARD */
+.dash{
+  position: absolute;
+  top:150px;
+  left:156px;
+}
+.dash h4{
+  font-size: 30px;
+  font-weight: 280px;
+}
+.dash p, .dash li{
+font-size: 11px;
+}
+.dash p{
+  position: absolute;
+  top: 60px;
+}
+.dash h5{
+  font-size: 22px;
+  font-weight: 700px;
+  position: absolute;
+  top: 100px;
+}
+.dash ul{
+  padding: 0;
+  position: absolute;
+  top: 150px;
+}
+.dash li{
+  border: 1px solid #DDDDDD;
+  list-style: none;
+  padding: 10px;
+  width: 500px;
+  margin-bottom: 3px;
+  border-radius: 1px;
+  color: #222222;
+}
+.begin,.resume{
+width: 62px;
+height: 32px;
+font-size: 12px;
+position: absolute;
+left: 85%;
+margin-top: -15px;
+}
+.begin{
+  border:transparent;
+  background: white;
+  color: #0052CC;
+}
+.resume{
+  background: rgba(9, 30, 66, 0.04);
+  mix-blend-mode: normal;
+  border-radius: 3px;
+  border: 1px solid #091E420A;
+  padding: 6px 8px;
+}
+.checkmark{
+  height: 25px;
+  width: 25px;
+  background-color: #F3F3F3;
+  border-radius: 50%;
+  border: 1px solid #DDDDDD;
+}

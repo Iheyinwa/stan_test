@@ -1,21 +1,21 @@
 /*NAVIGATION COMPONENT*/
 .navbar{
-  margin: 0S;
+  margin: 0px;
   position: fixed;
   width: 100%;
-  height: 72px;
   left: 0px;
   top: 0px;
-  background-color: #FFFFFF;
-  order: 1;
+  z-index: 1;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 6px rgba(193, 199, 208, 0.4);
 }
 nav ul,.content{
   width: 75%;
   margin-left:8%;
   margin-right:20%;
   position: absolute;
-  top: 5px;
-  height: 72px;
+  top: 3px;
+  height: 55px;
 }
 .nav{
   display: flex;
@@ -75,7 +75,7 @@ nav ul,.content{
   right: 10.73%;
   top: 50px;
 }
-.one h3,.two h3{
+.one h3,.two h3,.three h3,.four h3{
   font-weight: bold;
   font-size: 30px;
   line-height: 120%;
@@ -103,7 +103,7 @@ aside img{
 
 /*SECTION TWO*/
 .two{
-  /* background: #F4F5F7; */
+  background-color: #F4F5F7;
   width:100%;
   position: relative;
   top:450px;
@@ -128,13 +128,15 @@ aside img{
   left: 146px;
 }
 .card_one,.card_two,.card_three{
-  border:1px solid black;
+  border:1px solid #FFFFFF;
+  background: #FFFFFF;
   border-radius: 16px;
-  width:240px;
+  width:245px;
   padding:18px;
   margin-right: 32px;
-  box-shadow: 1px 1px 1px 0 #888888,
-  1px 1px 1px 0 #888888;
+}
+.card_two{
+  box-shadow: 0px 18px 31px rgba(9, 30, 66, 0.06);
 }
 .two img{
   position: absolute;
@@ -185,8 +187,7 @@ aside img{
   float: right;
   display: flex;
   width: 500px;
-  justify-content: space-between;
-  /* padding: 20px; */
+  padding-right: 10px;
 }
 .four img {
   position: absolute;
@@ -211,12 +212,13 @@ footer {
   width: 100%;
   background: #091E42;
   color: white;
-  height: 224px;
+  height: 180px;
   margin-top: 10px;
 }
 .content {
   display: flex;
   justify-content: space-between;
+  margin-top: 30px;
 }
 .logo {
   position: absolute;
@@ -234,7 +236,8 @@ footer {
   text-align: right;
 }
 .socials p {
-  margin-top: 83px;
+  margin-top: 77px;
+  color: #FAFBFC;
 }
 .icons {
   list-style: none;
@@ -249,23 +252,5 @@ footer {
   width: 24px;
   height: 24px;
 }
-
-/* .card_one{
   
-  /* position: absolute;
-  width:340px; */
-/* .card_two {
-  border: 1px solid black;
-  border-radius: 16px;
-    width:359px;
-  /* position: absolute;
-  left:574px;
-  width: 340px; */
-
-/* .card_three {
-  border: 1px solid black;
-  border-radius: 16px;
-    width:359px;*/
-  /* position: absolute;
-  left:250px;
-  width: 340px; */
+ 

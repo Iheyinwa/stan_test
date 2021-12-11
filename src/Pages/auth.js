@@ -1,22 +1,21 @@
 import { FillLogo } from '../svg/icon';
 import blueLogo from '../img/blueLogo.png';
-import { Button } from '../Components/Button';
+import { Login } from '../Components/Login';
+import { Reset } from '../Components/Reset';
+import { useState } from 'react';
 export function Auth() {
+	const [ form, setForm ] = useState(false);
+
+	const onClick = () => {
+		setForm(!form);
+	};
 	return (
-		<main>
+		<main className="auth">
 			<div className="Logos">
 				<FillLogo />
 				<img src={blueLogo} alt="Company Blue Logo" />
 			</div>
-			<div className="card">
-				<h4>Log in</h4>
-				<p>Access your resource edge account</p>
-				<h5>Email Address</h5>
-				<input placeholder="Enter email" />
-				<Button className="login sign-in" />
-				<hr />
-				<h6>Forgot Password?</h6>
-			</div>
+			<div className="card">{form ? <Login onClick={onClick} /> : <Reset onClick={onClick} />}</div>
 		</main>
 	);
 }

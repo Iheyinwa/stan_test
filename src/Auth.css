@@ -1,4 +1,4 @@
-main{
+.auth{
   width:100%;
   background-image: url('./img/auth.png');
   height: 300px;
@@ -32,6 +32,8 @@ main{
   left: 205.41px;
   right: 205.41px;
   top: 20px;
+}
+.card h4, .reset h4{
   font-size: 24px;
   line-height: 32px;
 }
@@ -40,6 +42,11 @@ main{
   position: absolute;
   top: 80px;
   left:146px;
+}
+.reset p{
+ position: absolute;
+ top: 80px;
+ left:100px;
 }
 .card h5{
   position: absolute;
@@ -81,4 +88,11 @@ h6{
 }
 .Logos img:hover, h6:hover, .sign-in:hover{
   cursor: pointer;
+}
+.reset h4{
+  position: absolute;
+  left: 150px;
+  width:200px;
+  top: 20px;
+  font-size: 24px;
 }
