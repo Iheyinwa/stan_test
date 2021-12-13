@@ -4,7 +4,7 @@ import { Login } from '../Components/Login';
 import { Reset } from '../Components/Reset';
 import { useState } from 'react';
 export function Auth() {
-	const [ form, setForm ] = useState(false);
+	const [ form, setForm ] = useState(true);
 
 	const onClick = () => {
 		setForm(!form);
