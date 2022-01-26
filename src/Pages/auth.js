@@ -4,7 +4,7 @@ import { Login } from '../Components/Login';
 import { Reset } from '../Components/Reset';
 import { useState } from 'react';
 export function Auth() {
-	const [ form, setForm ] = useState(false);
+	const [ form, setForm ] = useState(true);
 
 	const onClick = () => {
 		setForm(!form);
@@ -15,7 +15,7 @@ export function Auth() {
 				<FillLogo />
 				<img src={blueLogo} alt="Company Blue Logo" />
 			</div>
-			<div className="card">{form ? <Reset onClick={onClick} /> : <Login onClick={onClick} />}</div>
+			<div className="card">{form ? <Login onClick={onClick} /> : <Reset onClick={onClick} />}</div>
 		</main>
 	);
 }
